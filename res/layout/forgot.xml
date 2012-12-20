@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:id="@+id/RLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="match_parent">
+
+<TextView 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:textSize="18sp" 
+android:text="Retrieve or Change Password" 
+android:layout_alignParentTop="true" 
+android:layout_centerHorizontal="true" 
+android:id="@+id/change">
+</TextView>
+
+<FrameLayout android:layout_width="wrap_content" 
+android:id="@+id/Omnipic" 
+android:layout_height="wrap_content" 
+android:layout_alignTop="@+id/change" 
+android:layout_alignBottom="@+id/Submitbtn">
+</FrameLayout>
+
+<EditText android:layout_height="50px" 
+android:layout_width="fill_parent" 
+android:id="@+id/txtemail" 
+android:textSize="14sp" 
+android:layout_centerVertical="true" 
+android:layout_alignParentLeft="true">
+    <requestFocus></requestFocus>
+</EditText>
+
+<ImageView android:layout_width="242dp" 
+android:layout_height="150dp" 
+android:src="@drawable/omnibkgrnd" 
+android:layout_above="@+id/txtemail" 
+android:layout_centerHorizontal="true" 
+android:layout_marginBottom="27dp">
+</ImageView>
+
+<TextView android:layout_height="wrap_content" 
+android:layout_width="wrap_content" 
+android:id="@+id/emailView" 
+android:text="Please enter email address: " 
+android:textSize="18sp" 
+android:layout_above="@+id/txtemail" 
+android:layout_alignParentLeft="true">
+</TextView>
+
+<Button android:text="Submit" 
+android:layout_height="wrap_content" 
+android:id="@+id/Submit" 
+android:layout_width="fill_parent" 
+android:layout_below="@+id/txtemail" 
+android:layout_alignParentLeft="true">
+</Button>
+
+</RelativeLayout>

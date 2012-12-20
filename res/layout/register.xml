@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	android:id="@+id/RLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:text="Register Here" 
+android:layout_alignParentTop="true" 
+android:layout_centerHorizontal="true" 
+android:id="@+id/textView1"></TextView>
+
+<TextView android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:text="All fields with an asterik(*) must be completed" 
+android:layout_below="@+id/textView1" 
+android:layout_alignParentLeft="true" 
+android:layout_marginTop="17dp" 
+android:id="@+id/textView2"></TextView>
+
+<EditText android:layout_width="fill_parent" 
+android:layout_height="50px" 
+android:id="@+id/txtComments" 
+android:textSize="14sp" 
+android:layout_alignBaseline="@+id/textView3" 
+android:layout_alignBottom="@+id/textView3" 
+android:layout_alignParentRight="true" 
+android:layout_toRightOf="@+id/textView3">
+ <requestFocus></requestFocus>
+</EditText>
+
+<EditText android:layout_width="fill_parent" 
+android:layout_height="50px" 
+android:textSize="14sp" 
+android:layout_toRightOf="@+id/textView4" android:layout_below="@+id/txtComments" android:id="@+id/txtComments2">
+</EditText>
+
+<TextView android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:text="*Email: " 
+android:id="@+id/textView5" 
+android:layout_below="@+id/txtComments2" 
+android:layout_alignLeft="@+id/textView4" 
+android:layout_marginTop="14dp"></TextView>
+
+<EditText android:layout_width="fill_parent" 
+android:layout_height="50px" 
+android:textSize="14sp" 
+android:layout_below="@+id/txtComments2" 
+android:id="@+id/txtComments3" android:layout_alignLeft="@+id/txtComments">
+</EditText>
+
+<TextView android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:text="*Username: " 
+android:layout_below="@+id/txtComments3" 
+android:layout_alignLeft="@+id/textView4" 
+android:layout_marginTop="14dp" 
+android:id="@+id/textView6"></TextView>
+
+<TextView android:layout_width="wrap_content" 
+android:layout_height="wrap_content" 
+android:text="Owned Gamer Platform(s): " 
+android:layout_below="@+id/textView6" 
+android:layout_alignLeft="@+id/textView4" 
+android:layout_marginTop="14dp" 
+android:id="@+id/textView7"></TextView>
+
+<CheckBox 
+android:id="@+id/chkPS3"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/textView7"
+android:text="PS3"
+/>
+<CheckBox android:id="@+id/chkXbox360" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content" 
+android:text="Xbox 360" 
+android:layout_alignBaseline="@+id/chkPS3" 
+android:layout_alignBottom="@+id/chkPS3" 
+android:layout_alignParentRight="true" 
+android:layout_alignLeft="@+id/txtComments4">
+</CheckBox>
+
+<CheckBox android:id="@+id/chkPC" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content" 
+android:text="PC" 
+android:layout_below="@+id/chkPS3" 
+android:layout_alignParentLeft="true">
+</CheckBox>
+
+<EditText android:layout_width="fill_parent" 
+android:layout_height="50px" 
+android:textSize="14sp" 
+android:layout_below="@+id/chkPC" 
+android:layout_alignLeft="@+id/chkXbox360" android:id="@+id/txtComments5">
+</EditText>
+
+<Button android:layout_width="fill_parent" 
+android:layout_height="wrap_content" 
+android:id="@+id/Registerbtn" 
+android:text="Register" 
+android:layout_alignParentBottom="true" 
+android:layout_toLeftOf="@+id/textView1"></Button>
+
+<Button android:layout_width="fill_parent" 
+android:layout_height="wrap_content" 
+android:id="@+id/Cancelbtn" 
+android:text="Cancel" 
+android:layout_alignParentBottom="true" 
+android:layout_alignParentRight="true" 
+android:layout_toRightOf="@+id/textView1">
+</Button>
+<TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Last Name: " android:layout_alignBaseline="@+id/txtComments2" android:layout_alignBottom="@+id/txtComments2" android:layout_alignParentLeft="true"></TextView>
+<TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*First Name: " android:layout_below="@+id/textView2" android:layout_alignParentLeft="true" android:layout_marginTop="14dp"></TextView>
+<CheckBox android:text="Wii" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/chkWii" android:layout_below="@+id/chkPS3" android:layout_alignLeft="@+id/chkXbox360"></CheckBox>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView8" android:text="must be 6 charcters &amp; 1 digit " android:layout_above="@+id/Registerbtn" android:layout_alignParentLeft="true" android:layout_marginBottom="21dp"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView8" android:text="*Password: " android:layout_alignBaseline="@+id/txtComments5" android:layout_alignBottom="@+id/txtComments5" android:layout_alignParentLeft="true"></TextView>
+<EditText android:layout_width="fill_parent" android:layout_height="50px" android:id="@+id/txtComments4" android:textSize="14sp" android:layout_alignBaseline="@+id/textView6" android:layout_alignBottom="@+id/textView6" android:layout_alignParentRight="true" android:layout_alignLeft="@+id/txtComments3"></EditText>
+
+
+</RelativeLayout>
